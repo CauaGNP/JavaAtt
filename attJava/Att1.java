@@ -1,11 +1,12 @@
-public class Att3 {
-        public static void selectionSort(int[] arr){
+package attJava;
+public class Att1{
+    public static void selectionSort(int[] arr){
         int lengthArr = arr.length;
 
         for(int i = 0; i < lengthArr - 1 ; i++){
             int menorValor = i;
             for(int j = menorValor + 1; j < lengthArr; j++){
-                if(arr[j] > arr[menorValor]){
+                if(arr[j] < arr[menorValor]){
                     menorValor = j;
                 }
             }
@@ -23,14 +24,10 @@ public class Att3 {
         }
         selectionSort(array);
         System.out.println(" ");
-        System.out.println("Array ordenado de forma decrescente:");
+        System.out.println("Array ordenado:");
 
         for(int i = 0; i < array.length; i++){
             System.out.print(array[i] + " ");
         }
-
-        System.out.println("A mudança ocorreu apenas na condição do segundo for.");
-        System.out.println("Antes: if(arr[j] < arr[menorValor])");
-        System.out.println("Depos: if(arr[j] > arr[menorValor])");
-    }   
+    }
 }

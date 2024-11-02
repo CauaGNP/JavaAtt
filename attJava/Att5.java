@@ -1,3 +1,4 @@
+package attJava;
 import java.util.Random;
 
 public class Att5 {
